@@ -33,9 +33,9 @@ Both datasets enter modeling from the processed splits produced in Task 1:
 Logistic Regression provides a linear, interpretable baseline. Its coefficients directly indicate feature importance direction and magnitude, making it valuable for regulatory explainability alongside the ensemble model.
 
 ### Limitations
-- Cannot capture non-linear relationships (e.g., interaction between `time_since_signup` and `user_tx_count`)
+- Cannot capture non-linear relationships (e.g., `time_since_signup × user_tx_count`)
 - Sensitive to feature scaling (handled via StandardScaler in Task 1)
-- Assumes linear decision boundary — insufficient for complex fraud patterns
+- Linear decision boundary is insufficient for complex fraud patterns
 
 ---
 
